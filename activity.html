@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO AM I</title>
+
+    <style>
+        .container{
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-areas: 
+    "header header header"
+    "about main aside"
+    "footer footer footer";
+  grid-gap: .75em;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(190, 218, 218);
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+    font: bold;
+}
+
+about{
+    grid-area: about;
+    background-color: rgb(213, 230, 241);
+}
+main{
+    grid-area: main;
+    background-color: lightblue;
+    
+}
+
+image{
+    size: 30px;
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(213, 230, 241);
+}
+footer{
+    grid-area: footer;
+    background-color:rgb(213, 230, 241);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>PROFILE</header>
+        <about>About Me </br></br>
+        <p>I am a 3rd year IT Student at Colegio De Sta. Teresa De Avila
+        </p>
+        </about>
+
+        <main>
+        <div class="image">
+            <img src="">
+        </div></main>
+
+        <aside>Details</aside>
+        <footer>FOOTER</footer>
+      </div>
+</body> 
+</html>
